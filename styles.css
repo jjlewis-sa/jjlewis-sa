@@ -1,0 +1,17 @@
+.jokepanel{
+    margin: auto;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border: 1px #141313 solid;
+}
+footer{
+    margin: auto;
+    text-align: center;
+}
+.joke{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #141313;
+}
