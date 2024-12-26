@@ -42,9 +42,6 @@ $('#getJokeButton').click(function() {
     });
 
     function counter_fn() {
-        //get json data
-
-        //get json data
         var counter = document.getElementById("cntr");
         var count = 0;
         count = parseInt(counter.innerHTML);
