@@ -17,7 +17,7 @@
             span.className = "joke";
             span.id = "joke_id";
             span.innerHTML = data.joke;
-            const br = document.createElement("br");
+            var br = document.createElement("br");
             // Append to another element:
             document.getElementById("joke-section").appendChild(span);
             document.getElementById("joke-section").appendChild(br);
