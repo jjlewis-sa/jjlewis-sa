@@ -18,9 +18,11 @@ Built as a portfolio project for codecademy fullstack course
 
 ## Usage
 
-2. Run the index.html file in the main directory of your web server
+1. Run the index.html file in the main directory of your web server
 
-3. Or just run the html page as a local file in your web browser
+2. Or just run the html page as a local file in your web browser
+
+3. Or visit my github url https://jjlewis-sa.github.io/
 
 ## Contributing
 
