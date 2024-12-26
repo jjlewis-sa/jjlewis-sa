@@ -1,6 +1,7 @@
 # JokeApp
 
 JokeApp is a simple application that provides random jokes to lighten up your day.
+Built as a portfolio project for codecademy fullstack course
 
 ## Features
 
