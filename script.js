@@ -40,7 +40,7 @@ $('#getJokeButton').click(function() {
             console.error('Error fetching joke:', error);
         });
     });
-    var theUrl = "./count.php";
+    var theUrl = "./visitors.php";
     var callback = function(response) {
         console.log(response);
     }
