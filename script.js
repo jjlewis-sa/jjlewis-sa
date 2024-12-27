@@ -40,15 +40,6 @@ $('#getJokeButton').click(function() {
             console.error('Error fetching joke:', error);
         });
     });
-
-    function counter_fn() {
-        var counter = document.getElementById("cntr");
-        var count = 0;
-        count = parseInt(counter.innerHTML);
-        count = count + 1;
-        counter.innerHTML = count;
-        //write file
-        
-        console.log(count);
-      }
-      window.onload = counter_fn;
+    function cb(response) {
+        document.getElementById('visits').innerText = response.value;
+    }
