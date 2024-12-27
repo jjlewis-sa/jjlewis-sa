@@ -40,6 +40,32 @@ $('#getJokeButton').click(function() {
             console.error('Error fetching joke:', error);
         });
     });
-    $.getJSON("https://api.countapi.xyz/hit/mysite.com/visits", function(response) {
-        $("#visits").text(response.value);
-    });
+    var theUrl = "./count.php";
+    var callback = function(response) {
+        console.log(response);
+    }
+    function httpGetAsync(theUrl, callback)
+    {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send(null);
+    }
+    window.onload = httpGetAsync(theUrl, callback);
+    function counter_fn() {
+        //Get visitor count
+
+        //Get visitor count
+        var counter = document.getElementById("cntr");
+        var count = 0;
+        count = parseInt(counter.innerHTML);
+        count = count + 1;
+        counter.innerHTML = count;
+        //write file
+        
+        //console.log(count);
+      }
+      window.onload = counter_fn;
