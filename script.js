@@ -40,6 +40,6 @@ $('#getJokeButton').click(function() {
             console.error('Error fetching joke:', error);
         });
     });
-    function cb(response) {
-        document.getElementById('visits').innerText = response.value;
-    }
+    $.getJSON("https://api.countapi.xyz/hit/mysite.com/visits", function(response) {
+        $("#visits").text(response.value);
+    });
